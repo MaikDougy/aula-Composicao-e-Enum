@@ -12,7 +12,7 @@ public class HourContract {
 
     }
 
-    public HourContract(Date dataDocontrato, Double valorPorHora, Integer horas){
+    public HourContract(Date dataDoContrato, Double valorPorHora, Integer horas){
         this.dataDoContrato = dataDoContrato;
         this.valorGanhoPorHora = valorPorHora;
         this.horas = horas;
