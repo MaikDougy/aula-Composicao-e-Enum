@@ -4,7 +4,7 @@ public class HourContract {
 
     //Parametros
     private Date dataDoContrato;
-    private Double valorPorHora;
+    private Double valorGanhoPorHora;
     private Integer horas;
 
     //contrutores
@@ -14,7 +14,7 @@ public class HourContract {
 
     public HourContract(Date dataDocontrato, Double valorPorHora, Integer horas){
         this.dataDoContrato = dataDoContrato;
-        this.valorPorHora = valorPorHora;
+        this.valorGanhoPorHora = valorPorHora;
         this.horas = horas;
     }
 
@@ -27,10 +27,10 @@ public class HourContract {
     }
 
     public Double getValorPorHora (){
-        return valorPorHora;
+        return valorGanhoPorHora;
     }
     public void setValorPorHora(Double valorPorHora){
-        this.valorPorHora = valorPorHora;
+        this.valorGanhoPorHora = valorPorHora;
     }
 
     public Integer getHoras(){
@@ -41,7 +41,7 @@ public class HourContract {
     }
 
     //métodos
-    public Double calcularHoras(){
-        return horas * valorPorHora;
+    public Double valorGanhoNoContrato(){
+        return horas * valorGanhoPorHora;
     }
 }
